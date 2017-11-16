@@ -1,24 +1,36 @@
+
 body {
-/*  background: url(../images/GOT-wallpaper.jpg);
-  background-color: rgba(255, 255, 255, 0.1);
-  height: 100%;
-  background-size: 100%;*/
-  background-repeat: repeat;
+  background: url(../images/background3.jpg);
+  height: auto;
+  background-size: cover;
 }
-#title{
-  text-align: center;
-  margin: 20px;
+h1{
+   font-family: 'Viner Hand ITC';
+   font-size: 70px
 }
-/*h1{
-  font-family: 'Game of Thrones';
-  src: url(../css/Game of Thrones.ttf);
-}*/
+.jumbotron{
+  padding-top: 30px;
+  background-color:#fb8200;
+}
+#spacer{
+  background-color:#fb8200;
+}
 p{
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+#ordered, #guessed, #stats{
+  background-color:#fcf199;
+}
+
+#randomNumber, #userTotal{
   font-size: 34px;
   font-weight: bold;
-  color: white;
+  color: black;
 }
-#char-image{
-  margin: auto;
+.dessert{
+  width: 200px;
+  height: 200px;
 }
 

@@ -2,16 +2,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Title</title>
+  <title>Turkey Day Game</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <!-- Bootstrap style sheet-->
   <!-- Bootstrap style sheet-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 <body>
+  <div class="container">
+<div class="jumbotron jumbotron-fluid ">
+  <div class="container">
+    <h1 class="title text-center" >Thanksgiving Dessert Game</h1>
+      <div class="container-fluid" >
+        <p class="text-left pt-1">For Thanksgiving Dinner customers want to place dessert orders for the total number of guests they will be serving. This is the number displayed on the left. When you click on one of the 4 desserts below, it will add a set number of servings to your total number of dessert servings. If your score matches the Requested number of servings, you win. If you go over the amount of servings of dessert requested, you lose. Click on any dessert to begin.</p>
+      <div class="container-fluid">
+        <div class="row">
 
+            <div class="col-md-3 col-sm-6 " >
+                <img class="dessert img-fluid" src="assets/images/dessert1.jpg" alt="dessert"  id="applePie" data-value="dessert1">
+            </div>
+            <div class="col-md-3 col-sm-6 " >
+                <img class="dessert img-fluid" src="assets/images/dessert2.jpg" alt="dessert"  id="pumpkinPie" data-value="dessert2">
+            </div>
+            <div class="col-md-3 col-sm-6 " >
+                <img class="dessert img-fluid" src="assets/images/dessert3.jpg" alt="dessert"  id="pecanPie" data-value="dessert3">
+            </div>
+            <div class="col-md-3 col-sm-6 ">
+                <img class="dessert img-fluid" src="assets/images/dessert4.jpg" alt="dessert"  id="cake" data-value="dessert4">
+            </div>
+          </div>
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <h6 class="Dessert-Cnt">Apple Pie: <span id="appleClicks"></h6>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="Dessert-Cnt">Pumpkin Pie: <span id="pumpkinClicks"></h6>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="Dessert-Cnt">Pecan Pie: <span id="pecanClicks"></h6>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="Dessert-Cnt">Turkey Cake: <span id="cakeClicks"></h6>
+                    </div>
+                </div>
+            <br>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 offset-md-2 text-center text-black my-2 py-3" id="ordered">
+            <div>Desserts Ordered:
+              <div id="randomNumber"></div>
+            </div>
+          </div>
+          <div class="col-md-1 id=spacer"></div>
+          <div class="col-md-2 text-center text-black my-2 py-3" id="guessed">
+            <div>Your Order:
+              <div id="userTotal">0</div>
+            </div>
+
+          </div>
+          <div class="col-md-1 id=spacer"></div>
+          <div class="col-md-2 text-center text-black my-2 py-3" id="stats">
+            <div>Wins:
+              <span id="wins"></span>
+            </div>
+            <div>Losses:
+              <span id="losses"></span>
+            </div>
+            <div>Game:
+              <span id="game-msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

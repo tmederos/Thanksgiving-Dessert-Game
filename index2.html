@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dessert Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- Bootstrap style sheet-->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap1.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+<div class="jumbotron jumbotron-fluid bg-primary">
+  <div class="container">
+    <h1 class="title text-center" >Thanksgiving Dessert Game</h1>
+      <div class="container-fluid" >
+        <p class="text-left pt-1">For Thanksgiving Desserts customers want to place orders for the total number of guests they will be serving. This is the number displayed on the left. When you click on one of the 4 desserts below, it will add a set number of servings to your total number of dessert servings. If your score matches the Requested number of servings, you win. If you go over the amount of servings of dessert requested, you lose.</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12  text-center my-2">
+            <div class="col-md-12" id="desserts">
+              <img class="dessert" src="assets/images/dessert1.jpg" alt="dessert"  id="applePie">
+              <img class="dessert" src="assets/images/dessert2.jpg" alt="dessert"  id="pumpkinPie">
+              <img class="dessert" src="assets/images/dessert3.jpg" alt="dessert"  id="cheeseCake">
+              <img class="dessert" src="assets/images/dessert4.jpg" alt="dessert"  id="pecanPie">
+              <img class="dessert" src="assets/images/dessert5.jpg" alt="dessert"  id="cake">
+            </div>
+                <div class="row">
+                    <div class="col-md-1" ></div>
+                    <div class="col-md-2">
+                        <h6 class="text-overlay">Apple Pie</h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-overlay">Pumpkin Pie</h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-overlay">Cheese Cake</h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-overlay">Pecan Pie</h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-overlay">Turkey Cake</h6>
+                    </div>
+                </div>
+            <br>
+            <!--<div>Click on a dessert</div> -->
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-2" ></div>
+          <div class="col-md-2 text-center text-black my-2 py-3" id="ordered">
+            <div>Desserts Ordered:
+              <div id="randomNumber"></div>
+            </div>
+          </div>
+          <div class="col-md-1 text-center bg-primary text-dark"></div>
+          <div class="col-md-2 text-center text-black my-2 py-3" id="guessed">
+            <div>Your Order:
+              <div id="userTotal"></div>
+            </div>
+
+          </div>
+          <div class="col-md-1 bg-primary"></div>
+          <div class="col-md-2 text-center text-black my-2 py-3" id="stats">
+            <div>Wins:
+              <span id="wins"></span>
+            </div>
+            <div>Losses:
+              <span id="losses"></span>
+            </div>
+            <div>Game:
+              <span id="game-msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
