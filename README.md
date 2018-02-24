@@ -16,7 +16,7 @@ You lose if your score goes above the random number.
 
 The game will restart whenever you wins or loss.
 
-![screen-shot](.jpg)
+![screen-shot](https://github.com/tmederos/Thanksgiving-Dessert-Game/blob/master/assets/images/screenshot.jpg)
 
 ## Author
 
