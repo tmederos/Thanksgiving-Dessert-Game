@@ -16,7 +16,7 @@ You lose if your score goes above the random number.
 
 The game will restart whenever you wins or loss.
 
-![Best-match](https://github.com/tmederos/FriendFinder/blob/master/app/public/images/best-match.png)
+![screen-shot](.jpg)
 
 ## Author
 
